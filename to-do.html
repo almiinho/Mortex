@@ -26,9 +26,9 @@
   <button id="addTaskButton">Add Task</button>
   
   <ul id="taskList"> </ul><br>
-  <video controls autoplay>
-    <source src="video.mp4" type="video/mp4">
-    </video>
+  <video id="video" controls>
+    <source src="video.mp4.mp4" type="video/mp4">
+</video>
   <script>
     
     const todoList = {
@@ -85,6 +85,8 @@
         taskInput.value = ""; 
       }
     }); 
+    var video = document.getElementById('video');
+    video.addEventListener('click', toggleFullScreen);
   </script>
     
   </body>
